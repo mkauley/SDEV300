@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head Tag -->
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+	<link rel="stylesheet" type= "text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+</head>
+<!-- Start the body of the HTML -->
+<body>
+
+<h1> Countries of Europe Home </h1>
+<div class = "lineBox"></div>
+<h3> Sign In Page </h3>
+
+<!-- The form used to either sign-up or login -->
+<form action="signup.html" method="post">
+<div class = "centerBox">
+	<center>
+	<label for="realname">Full Name</label> 
+	<br>
+		<input 
+			type="text"
+			id="realname"
+			name="realname"
+			placeholder="full name"
+		/>
+	</center>
+</div>
+<br>
+<div class = "centerBox">
+	<center>
+	<label for="email">E-Mail Address</label> 
+		<br>
+		<input 
+			type="email"
+			id="email"
+			name="email"
+			placeholder="e-mail address"
+		/>
+	</center>
+</div>
+<br>
+<div class = "centerBox">
+	<center>
+	<label for="password">Enter Password</label> 
+		<br>
+		<input 
+			type="password"
+			id="password1"
+			name="password1"
+			placeholder="enter password"
+		/>
+	</center>
+</div>
+<br>
+<div class = "centerBox">
+	<center>
+	<label for="confirm">Confirm Password</label> 
+		<br>
+		<input 
+			type="password"
+			id="password2"
+			name="password2"
+			placeholder="confirm password"
+		/>
+	</center>
+</div>
+<br>
+<center>
+    <input type="submit" class="submit" value="Sign Up">
+</center>
+</form>
+
+{% with messages = get_flashed_messages(with_categories=false) %}
+{% if messages %}
+	{% for message in messages %}
+		<div class="alert">
+		{{ message }}
+		</div>
+	</div>
+	{% endfor %}
+{% endif %}
+{% endwith %}
+
+<!-- A spacer followed by a line -->
+<div class="spacerBox"></div>
+<div class="lineBox"></div>
+
+<!-- Page last queried date/time -->
+<h3> This page was last queried at {{date_time}} </h3>
+
+<!-- Close it all down, end the body and the html -->
+</body>
+</html>

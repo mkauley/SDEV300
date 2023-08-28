@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head Tag -->
+<!-- Title contains dynamic city/country name -->
+<head>
+	<meta charset="utf-8">
+	<title>Details of {{capital}}, {{country_name}}</title>
+	<link rel="stylesheet" type= "text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+</head>
+<!-- Start the body of the HTML -->
+<body>
+<h1>Details of {{capital}}, {{country_name}}</h1>
+
+<h3> National Flag of {{country_name}}: </h3>
+
+<!-- A link back to the beginning by clicking on the flag. -->
+<!-- Also contains alternate text in case the flag image is broken/doesn't load -->
+<a href="../front.html"><img src="{{url_for('static', filename='flags/')}}{{country_tech_name}}.gif" alt="{{country_name}} Flag / Link to Home" class="countryFlagBox"></a>
+
+<p class="subText"> Click the Flag to Return Home</p>
+
+<!-- A line without a spacer -->
+<div class="lineBox"></div>
+
+<!-- An unordered list containing data provided by Python -->
+<h3> City Details </h3>
+<div class = "centerBox">
+	<ul>
+		<li> Primary Spoken Language: {{language}}
+		<li> City Population: {{population}} 
+		<li> Elevation Above Sea Level: {{elevation}} 
+	</ul>
+</div> 
+
+<!-- A spacer followed by a line -->
+<div class="spacerBox"></div>
+<div class="lineBox"></div>
+
+<!-- Page last queried date/time -->
+<h3> This page was last queried at {{date_time}} </h3>
+
+<!-- Close it all down, end the body and the html -->
+</body>
+</html>

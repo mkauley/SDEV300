@@ -1,0 +1,200 @@
+/* Main body style*/
+body {
+	background: black;
+	color: white;
+	font-family: Verdana, Arial, sans-serif;
+}
+
+/* h1, h2, h3 Styles */
+h1 {
+	color: red;
+	font-size: 42px;
+	font-family: Arial;
+	text-align: center;
+}
+
+h2 {
+	color: white;
+	font-size: 28px;
+	font-family: Arial;
+	text-align: center;
+}
+
+h3 {
+	color: white;
+	font-size: 18px;
+	font-family: Arial;
+	text-align: center;
+}
+
+/* Paragraph styles */
+p {
+	color: grey;
+	font-size: 18px;
+	font-family: Verdana, Arial, sans-serif;
+	margin: 25px;
+	text-align: center;
+}
+
+/* Ordered list style */
+ol {
+	list-style-type: 1;
+}
+
+/* Spacer box, used to add in extra space */
+.spacerBox{
+	width: 800px;
+	height: 30px;
+}
+
+/* Used to draw a "line" seperator on the screen */
+.lineBox{
+	width: 800px;
+	height: 1px;
+	border: 3px solid white;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Encapsulates items and centers them on the screen */
+.centerBox{
+	width: 400px;
+	border: 0px solid white;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.centerBox2{
+	width: 800px;
+	border: 0px solid white;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Encapsulates items and centers them on the screen */
+.naviBox{
+	width: 600px;
+	border: 0px solid white;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center
+}
+
+
+/* Creates the unique pattern of cropping the corners */
+.flagBox {
+	display: block;
+	height: 25%;
+	width: 25%;
+	border: 1px solid white;
+	border-top-right-radius: 50% 50%;	
+	border-bottom-left-radius: 50% 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* A more standard pattern for formatting the flag images */
+.countryFlagBox {
+	display: block;
+	height: 25%;
+	width: 25%;
+	border: 1px solid white;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Format the subtext under the flag images */
+.subText {
+	color: white;
+	font-size: 10px;
+	font-family: Arial;
+	text-align: center;
+}
+
+/* Link Color Manipulators */
+a:link {
+	color: lightblue;
+}
+
+a:visited {
+	color: red;
+}
+
+a:hover {
+	color: blue;
+}
+
+a:active {
+	color: blue;
+}
+
+/*Input box styles*/
+input {
+	width: 200px;
+	border: 2px solid red;
+}
+
+input[type=submit] {
+	width: 200px;
+	border: 2px solid black;
+}
+
+.logoutButton {
+	width: 200px;
+	height: 50px;
+	background: red;
+	border: 2px solid white;
+	border-top-left-radius: 15% 15%;	
+	border-top-right-radius: 15% 15%;	
+	border-bottom-left-radius: 15% 15%;	
+	border-bottom-right-radius: 15% 15%;
+	color: white;
+	font-size: 18px;
+	font-family: Arial;
+	text-align: center;
+}
+
+/* Placeholder styles*/
+/* Non MS Browers */
+::placeholder {
+	color: darkgrey;
+	opacity: .5;
+}
+
+/* IE 10 & 11 */
+:-ms-input-placeholder {
+	color: darkgrey;
+}
+
+/* MS Edge */
+::-ms-input-placeholder {
+	color: darkgrey;
+}
+
+.alert {
+	color: blue;
+	background-color: lightblue;
+	border: 1px solid blue;
+	font-size: 14px;	
+	width: 300px;
+	display: block;
+	padding: 6px;
+	margin: 6px;
+	border-radius: 3px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.landmark {
+	display: block;
+	width: 300px;
+	border: 1px solid white;
+	margin-left: auto;
+	margin-right: auto;
+}
